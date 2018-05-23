@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Termékeink</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="description" content="HTML5 sample" />
+  <meta name="keywords" content="keyword1, keyword2" />-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="index.js"></script> 
+  
+  <style>
+    body {
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+  </style>
+  
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Lados István EV</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="language-box">
+            <img src="german.png" class="language" />
+            <img src="english.png" class="language" />
+            <img src="hungarian.png" class="language" />
+          </li>
+          <li class="link"><a href="index.html">Kezdőlap</a></li>
+          <li class="link"><a href="about.html">Rólunk</a></li>
+          <li class="link default"><a href="product.html">Termékeink</a></li>
+          <li class="link"><a href="gallery.html">Galéria</a></li>
+          <li class="link"><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a href="#">Összes termék</a>
+    <a href="#" onclick="drotfonat()">Drótfonatok</a>
+    <a href="#" class="visibility subcategory" id="1">Horganyzott</a>
+    <a href="#" class="visibility subcategory" id="2">Műanyaggal bevont</a>
+    <a href="#" onclick="csirkehalo()">Csirkeháló</a>
+    <a href="#" class="visibility subcategory" id="3">Horganyzott huzalból</a>
+    <a href="#" class="visibility subcategory" id="4">Fekete huzalból</a>
+    <a href="#" class="visibility subcategory" id="5">Műanyaggal bevont huzalból</a>
+    <a href="#" onclick="szegek()">Szegek</a>
+    <a href="#" class="visibility subcategory" id="6">Huzalszeg</a>
+    <a href="#" class="visibility subcategory" id="7">Csavartszeg</a>
+    <a href="#" class="visibility subcategory" id="8">U-szeg</a>
+    <a href="#" onclick="huzalok()">Huzalok</a>
+    <a href="#" class="visibility subcategory" id="9">Horganyzott lágyhuzal</a>
+    <a href="#" class="visibility subcategory" id="10">Horganyzott félkemény huzal</a>
+    <a href="#" class="visibility subcategory" id="11">Fekete lágyhuzal</a>
+    <a href="#" class="visibility subcategory" id="12">Bevonatlan keményhuzal</a>
+    <a href="#" class="visibility subcategory" id="13">Műanyaggal bevont huzal</a>
+    <a href="#">Ponthegesztett kerítés</a>
+    <a href="#">Ponthegesztett hálók</a>
+    <a href="#">Huzalfeszítők</a>
+    <a href="#">Szögesdrót</a>
+    <a href="#">Ipari kerítés</a>
+    <a href="#">Táblás kerítés</a>
+    <a href="#">Oszlop</a>
+    <a href="#" onclick="rogzetok()">Rögzítők</a>
+    <a href="#" class="visibility subcategory" id="14">PVC</a>
+    <a href="#" class="visibility subcategory" id="15">Fém</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <h1>Horganyzott drótfonat</h1>
+      <img class="grid-image" src="http://via.placeholder.com/350x200" />
+    </div>
+    <div class="grid-item">
+      <h1>Műanyaggal bevont drótfonat</h1>
+      <img class="grid-image" src="http://via.placeholder.com/350x200" />
+    </div>
+    <div class="grid-item">
+      <h1>Csirkeháló horganyzott huzalból</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Csirkeháló fekete huzalból</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Csirkeháló műanyaggal bevont huzalból</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Huzalszeg</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Csavartszeg</h1>
+    </div>
+    <div class="grid-item">
+      <h1>U-szeg</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Horganyzott lágyhuzal</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Horganyzott félkemény huzal</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Fekete lágyhuzal</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Bevonatlan keményhuzal</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Műanyaggal bevont huzal</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Ponthegesztett kerítés</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Ponthegesztett hálók</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Huzalfeszítők</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Szögesdrót</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Ipari kerítés</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Táblás kerítés</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Oszlop</h1>
+    </div>
+    <div class="grid-item">
+      <h1>PVC rögzítő</h1>
+    </div>
+    <div class="grid-item">
+      <h1>Fém rögzítő</h1>
+    </div>
+  </div> 
+</body>
+</html>

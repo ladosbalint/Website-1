@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Kapcsolat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="description" content="HTML5 sample" />
+  <meta name="keywords" content="keyword1, keyword2" />-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="index.js"></script>  
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Lados István EV</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="language-box">
+            <img src="german.png" class="language" />
+            <img src="english.png" class="language" />
+            <img src="hungarian.png" class="language" />
+          </li>
+          <li class="link"><a href="index.html">Kezdőlap</a></li>
+          <li class="link"><a href="about.html">Rólunk</a></li>
+          <li class="link"><a href="product.html">Termékeink</a></li>
+          <li class="link"><a href="gallery.html">Galéria</a></li>
+          <li class="link default"><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="contact" class="container-fluid">
+    <div class="col-lg-6" id="details">
+      <div class="col-lg-12">
+        <div>
+          <span style="font-weight: bold;">Telefon:</span> +36309003780<br/>
+          <span style="font-weight: bold;">E-mail:</span> ladosistvan@upcmail.hu<br/>
+          <span style="font-weight: bold;">Cím:</span> 2216 Bénye, Kossuth Lajos utca 50.<br/>
+        </div>
+        <div style="margin-top: 20px;">
+          <span style="font-weight: bold;">Nyitvatartás:</span>
+          <ul>
+            <li>Hétköznap: </li>
+            <li>Hétvégén: </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-12" style="margin-top: 50px;">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 47.352848 , lng: 19.536467};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 13,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4WpZML8rTu64dzeHnLjWvncTSDxK8GN4&callback=initMap">
+        </script>
+      </div>
+    </div>
+    <div class="col-lg-6" style="float: right; display: inline-block;">
+      <h1>Kapcsolatfelvétel</h1>
+      <div class="col-lg-6 col-lg-offset-3">
+        <form action="email.php" method="post" name="myform" id="contactform">
+          <div class='form-group'>
+            <label class='col-form-label' for='name'>Név:</label>
+            <div class='col-10'>
+              <input class='form-control' type='text' name='name'>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='col-form-label' for='email'>E-mail:</label>
+            <div class='col-10'>
+              <input class='form-control' type='email' name='email'>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='col-form-label' for='telephone'>Telefonszám:</label>
+            <div class='col-10'>
+              <input class='form-control' type='number' name='telephone'>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='col-form-label' for='message'>Üzenet:</label>
+            <div class='col-10'>
+              <textarea class='form-control' rows='12' name='message'></textarea>
+            </div>
+          </div>
+          <div class='col-10 text-center' style='margin-bottom: 15px;'>
+            <input type='submit' name='submit' class='btn btn-info' value='Submit'>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="footer_contact">
+      <span>Tel: +36309003780</span><br/>
+      <span>E-mail: ladosistvan@upcmail.hu</span><br/>
+      <span>Address: 2216 Bénye, Kossuth Lajos u. 50.</span>
+    </div>
+    <div id="footer_copyright">
+      <span>
+        Copyright &copy; 
+        <script type="text/javascript">
+          var d = new Date();
+          document.write(d.getFullYear());
+        </script>
+        Lados István EV
+      </span>
+    </div>
+  </div>
+</body>
+</html>
