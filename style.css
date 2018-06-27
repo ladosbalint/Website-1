@@ -37,7 +37,8 @@ nav {
     padding-left: 17px !important;
     padding-right: 17px !important;
     text-align: center !important;
-    font-size: 18px !important; }
+    font-size: 18px !important;
+    margin: 0 .5px; }
   nav li a:hover {
     border-bottom: 5px solid #222222;
     margin-bottom: -5px;
@@ -199,7 +200,7 @@ i {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  animation: show 2s 0.5s ease-in alternate infinite; }
+  animation: show 1.5s 0.5s ease-in alternate infinite; }
 
 @keyframes show {
   100% {
@@ -400,7 +401,9 @@ form {
   .sidenav .subcategory {
     font-size: 1.125em;
     border: none;
-    padding-left: 60px; }
+    margin-left: 40px; }
+  .sidenav .focus-category {
+    background-color: yellow; }
 
 .grid-container {
   margin-top: 50px;
@@ -418,14 +421,30 @@ form {
   background-size: auto;*/ }
   .grid-container .grid-item {
     width: 400px;
-    height: 400px;
-    background-color: grey;
-    color: white;
-    padding: 0 20px; }
+    height: 370px;
+    color: black;
+    padding: 20px;
+    border: 2px dotted black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
     .grid-container .grid-item .grid-image {
       display: block;
       margin-left: auto;
       margin-right: auto; }
+    .grid-container .grid-item .main-category {
+      font-family: Raleway, Arial, sans-serif;
+      font-size: 2.25em; }
+    .grid-container .grid-item .sub-category {
+      font-family: Raleway, Arial, sans-serif;
+      font-size: 1.625em;
+      font-style: italic;
+      margin-left: 32px;
+      border-left: 3px solid black;
+      padding-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 30px; }
 
 /*#loading {
    width: 10vw;
