@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="index.js"></script> 
+  <script src="product.js"></script> 
   
   <style>
     body {
@@ -47,108 +47,150 @@
       </div>
     </div>
   </nav>
-  <div>
+
   <!-- Side navigation -->
   <div class="sidenav">
-    <a href="#">Összes termék</a>
-    <a href="#" onclick="drotfonat()">Drótfonatok</a>
+    <a href="#" onclick="collapse()" class="focus-category" id="a">Összes termék</a>
+    <a href="#" onclick="drotfonat()" id="b">Drótfonatok</a>
     <a href="#" class="visibility subcategory" id="1">Horganyzott</a>
     <a href="#" class="visibility subcategory" id="2">Műanyaggal bevont</a>
-    <a href="#" onclick="csirkehalo()">Csirkeháló</a>
+    <a href="#" onclick="csirkehalo()" id="c">Csirkeháló</a>
     <a href="#" class="visibility subcategory" id="3">Horganyzott huzalból</a>
     <a href="#" class="visibility subcategory" id="4">Fekete huzalból</a>
     <a href="#" class="visibility subcategory" id="5">Műanyaggal bevont huzalból</a>
-    <a href="#" onclick="szegek()">Szegek</a>
+    <a href="#" onclick="szegek()" id="d">Szegek</a>
     <a href="#" class="visibility subcategory" id="6">Huzalszeg</a>
     <a href="#" class="visibility subcategory" id="7">Csavartszeg</a>
     <a href="#" class="visibility subcategory" id="8">U-szeg</a>
-    <a href="#" onclick="huzalok()">Huzalok</a>
+    <a href="#" onclick="huzalok()" id="e">Huzalok</a>
     <a href="#" class="visibility subcategory" id="9">Horganyzott lágyhuzal</a>
     <a href="#" class="visibility subcategory" id="10">Horganyzott félkemény huzal</a>
     <a href="#" class="visibility subcategory" id="11">Fekete lágyhuzal</a>
     <a href="#" class="visibility subcategory" id="12">Bevonatlan keményhuzal</a>
     <a href="#" class="visibility subcategory" id="13">Műanyaggal bevont huzal</a>
-    <a href="#">Ponthegesztett kerítés</a>
-    <a href="#">Ponthegesztett hálók</a>
-    <a href="#">Huzalfeszítők</a>
-    <a href="#">Szögesdrót</a>
-    <a href="#">Ipari kerítés</a>
-    <a href="#">Táblás kerítés</a>
-    <a href="#">Oszlop</a>
-    <a href="#" onclick="rogzetok()">Rögzítők</a>
+    <a href="#" onclick="pontker()" id="f">Ponthegesztett kerítés</a>
+    <a href="#" onclick="ponthal()" id="g">Ponthegesztett hálók</a>
+    <a href="#" onclick="huzalfesz()" id="h">Huzalfeszítők</a>
+    <a href="#" onclick="szoges()" id="i">Szögesdrót</a>
+    <a href="#" onclick="ipari()" id="j">Ipari kerítés</a>
+    <a href="#" onclick="tablas()" id="k">Táblás kerítés</a>
+    <a href="#" onclick="oszlop()" id="l">Oszlop</a>
+    <a href="#" onclick="rogzetok()" id="m">Rögzítők</a>
     <a href="#" class="visibility subcategory" id="14">PVC</a>
     <a href="#" class="visibility subcategory" id="15">Fém</a>
   </div>
 
   <!-- Page content -->
-  <div class="grid-container">
-    <div class="grid-item">
-      <h1>Horganyzott drótfonat</h1>
+  <div class="grid-container" id="grid-parent">
+    <div class="grid-item" id="001">
+      <div class="main-category">Drótfonat</div>
+      <div class="sub-category">Horganyzott</div>
       <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Műanyaggal bevont drótfonat</h1>
+    <div class="grid-item" id="002">
+      <div class="main-category">Drótfonat</div>
+      <div class="sub-category">Műanyaggal bevont</div>
       <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Csirkeháló horganyzott huzalból</h1>
+    <div class="grid-item" id="003">
+      <div class="main-category">Csirkeháló</div>
+      <div class="sub-category">Horganyzott huzalból</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Csirkeháló fekete huzalból</h1>
+    <div class="grid-item" id="004">
+      <div class="main-category">Csirkeháló</div>
+      <div class="sub-category">Fekete huzalból</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Csirkeháló műanyaggal bevont huzalból</h1>
+    <div class="grid-item" id="005">
+      <div class="main-category">Csirkeháló</div>
+      <div class="sub-category">Műanyaggal bevont huzalból</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Huzalszeg</h1>
+    <div class="grid-item" id="006">
+      <div class="main-category">Szeg</div>
+      <div class="sub-category">Huzalszeg</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Csavartszeg</h1>
+    <div class="grid-item" id="007">
+        <div class="main-category">Szeg</div>
+        <div class="sub-category">Csavartszeg</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>U-szeg</h1>
+    <div class="grid-item" id="008">
+      <div class="main-category">Szeg</div>
+      <div class="sub-category">U-szeg</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Horganyzott lágyhuzal</h1>
+    <div class="grid-item" id="009">
+        <div class="main-category">Huzal</div>
+        <div class="sub-category">Horganyzott lágyhuzal</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Horganyzott félkemény huzal</h1>
+    <div class="grid-item" id="010">
+        <div class="main-category">Huzal</div>
+        <div class="sub-category">Horganyzott félkemény huzal</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Fekete lágyhuzal</h1>
+    <div class="grid-item" id="011">
+        <div class="main-category">Huzal</div>
+        <div class="sub-category">Fekete lágyhuzal</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Bevonatlan keményhuzal</h1>
+    <div class="grid-item" id="012">
+        <div class="main-category">Huzal</div>
+        <div class="sub-category">Bevonatlan keményhuzal</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Műanyaggal bevont huzal</h1>
+    <div class="grid-item" id="013">
+        <div class="main-category">Huzal</div>
+        <div class="sub-category">Műanyaggal bevont huzal</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Ponthegesztett kerítés</h1>
+    <div class="grid-item" id="014">
+        <div class="main-category">Ponthegesztett kerítés</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Ponthegesztett hálók</h1>
+    <div class="grid-item" id="015">
+        <div class="main-category">Ponthegesztett háló</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Huzalfeszítők</h1>
+    <div class="grid-item" id="016">
+        <div class="main-category">Huzalfeszítő</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Szögesdrót</h1>
+    <div class="grid-item" id="017">
+        <div class="main-category">Szögesdrót</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Ipari kerítés</h1>
+    <div class="grid-item" id="018">
+        <div class="main-category">Ipari kerítés</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Táblás kerítés</h1>
+    <div class="grid-item" id="019">
+        <div class="main-category">Táblás kerítés</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Oszlop</h1>
+    <div class="grid-item" id="020">
+        <div class="main-category">Oszlop</div>
+        <div class="sub-category">-</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>PVC rögzítő</h1>
+    <div class="grid-item" id="021">
+        <div class="main-category">Rögzítő</div>
+        <div class="sub-category">PVC rögzítő</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
-    <div class="grid-item">
-      <h1>Fém rögzítő</h1>
+    <div class="grid-item" id="022">
+        <div class="main-category">Rögzítő</div>
+        <div class="sub-category">Fém rögzítő</div>
+        <img class="grid-image" src="http://via.placeholder.com/350x200" />
     </div>
   </div> 
 </body>
