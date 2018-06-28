@@ -1,5 +1,5 @@
 ﻿$(document).ready(function(){
-	var about = $("div.about");
+	var about = $("article.about");
 	var aboutOffset = about.offset().top / 2;
 	
 	$(document).on("scroll", function(){
