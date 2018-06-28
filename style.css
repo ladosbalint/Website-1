@@ -349,7 +349,7 @@ form {
     border-top: 1px solid grey; }
     .sidenav a:hover {
       color: #000 !important; }
-  .sidenav .visibility {
+  .sidenav .invisibility {
     display: none; }
   .sidenav .subcategory {
     font-size: 1.125em;

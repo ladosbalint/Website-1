@@ -3,112 +3,112 @@
     eval(command);
 }
 
-let item1 = `<div class="grid-item" id="001">
+let item3 = `<div class="grid-item">
     <div class="main-category">Drótfonat</div>
     <div class="sub-category">Horganyzott</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item2 = `<div class="grid-item" id="002">
+let item4 = `<div class="grid-item">
     <div class="main-category">Drótfonat</div>
     <div class="sub-category">Műanyaggal bevont</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item3 = `<div class="grid-item" id="003">
+let item6 = `<div class="grid-item">
     <div class="main-category">Csirkeháló</div>
     <div class="sub-category">Horganyzott huzalból</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item4 = `<div class="grid-item" id="004">
+let item7 = `<div class="grid-item">
     <div class="main-category">Csirkeháló</div>
     <div class="sub-category">Fekete huzalból</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item5 = `<div class="grid-item" id="005">
+let item8 = `<div class="grid-item">
     <div class="main-category">Csirkeháló</div>
     <div class="sub-category">Műanyaggal bevont huzalból</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item6 = `<div class="grid-item" id="006">
+let item10 = `<div class="grid-item">
     <div class="main-category">Szeg</div>
     <div class="sub-category">Huzalszeg</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item7 = `<div class="grid-item" id="007">
+let item11 = `<div class="grid-item">
     <div class="main-category">Szeg</div>
-    <div class="sub-category">Csalettszeg</div>
+    <div class="sub-category">Csavartszeg</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item8 = `<div class="grid-item" id="008">
+let item12 = `<div class="grid-item">
     <div class="main-category">Szeg</div>
     <div class="sub-category">U-szeg</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item9 = `<div class="grid-item" id="009">
+let item14 = `<div class="grid-item">
     <div class="main-category">Huzal</div>
     <div class="sub-category">Horganyzott lágyhuzal</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item10 = `<div class="grid-item" id="010">
+let item15 = `<div class="grid-item">
     <div class="main-category">Huzal</div>
     <div class="sub-category">Horganyzott félkemény huzal</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item11 = `<div class="grid-item" id="011">
+let item16 = `<div class="grid-item">
     <div class="main-category">Huzal</div>
     <div class="sub-category">Fekete lágyhuzal</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item12 = `<div class="grid-item" id="012">
+let item17 = `<div class="grid-item">
     <div class="main-category">Huzal</div>
     <div class="sub-category">Bevonatlan keményhuzal</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item13 = `<div class="grid-item" id="013">
+let item18 = `<div class="grid-item">
     <div class="main-category">Huzal</div>
     <div class="sub-category">Műanyaggal bevont huzal</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item14 = `<div class="grid-item" id="014">
+let item19 = `<div class="grid-item">
     <div class="main-category">Ponthegesztett kerítés</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item15 = `<div class="grid-item" id="015">
+let item20 = `<div class="grid-item">
     <div class="main-category">Ponthegesztett háló</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item16 = `<div class="grid-item" id="016">
+let item21 = `<div class="grid-item">
     <div class="main-category">Huzalfeszítő</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item17 = `<div class="grid-item" id="017">
+let item22 = `<div class="grid-item">
     <div class="main-category">Szögesdrót</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item18 = `<div class="grid-item" id="018">
+let item23 = `<div class="grid-item">
     <div class="main-category">Ipari kerítés</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item19 = `<div class="grid-item" id="019">
+let item24 = `<div class="grid-item">
     <div class="main-category">Táblás kerítés</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item20 = `<div class="grid-item" id="020">
+let item25 = `<div class="grid-item">
     <div class="main-category">Oszlop</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item21 = `<div class="grid-item" id="021">
+let item27 = `<div class="grid-item">
     <div class="main-category">Rögzítő</div>
     <div class="sub-category">PVC rögzítő</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
-let item22 = `<div class="grid-item" id="022">
+let item28 = `<div class="grid-item">
     <div class="main-category">Rögzítő</div>
     <div class="sub-category">Fém rögzítő</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
@@ -116,226 +116,145 @@ let item22 = `<div class="grid-item" id="022">
 
 let parent;
 
-window.onload = () => {
+function clearAll() {
+
     for (let i = 1; i <= 28; i++) {
-        let command = `element${i} = document.getElementById("${i}");`;
+        let command = `element${i}.classList.remove("focus-category");`;
         eval(command);
     }
-
-    parent = document.getElementById("grid-parent");
-};
-
-function clearAll() {
-    element1.classList.remove("focus-category");
-    element2.classList.remove("focus-category");
-    element5.classList.remove("focus-category");
-    element9.classList.remove("focus-category");
-    element13.classList.remove("focus-category");
-    element19.classList.remove("focus-category");
-    element20.classList.remove("focus-category");
-    element21.classList.remove("focus-category");
-    element22.classList.remove("focus-category");
-    element23.classList.remove("focus-category");
-    element24.classList.remove("focus-category");
-    element25.classList.remove("focus-category");
-    element26.classList.remove("focus-category");
 }
 
 function closeAll() {
 
-    element3.classList.add("visibility");
-    element4.classList.add("visibility");
-    element6.classList.add("visibility");
-    element7.classList.add("visibility");
-    element8.classList.add("visibility");
-    element10.classList.add("visibility");
-    element11.classList.add("visibility");
-    element12.classList.add("visibility");
-    element14.classList.add("visibility");
-    element15.classList.add("visibility");
-    element16.classList.add("visibility");
-    element17.classList.add("visibility");
-    element18.classList.add("visibility");
-    element27.classList.add("visibility");
-    element28.classList.add("visibility");
+    element3.classList.add("invisibility");
+    element4.classList.add("invisibility");
+    element6.classList.add("invisibility");
+    element7.classList.add("invisibility");
+    element8.classList.add("invisibility");
+    element10.classList.add("invisibility");
+    element11.classList.add("invisibility");
+    element12.classList.add("invisibility");
+    element14.classList.add("invisibility");
+    element15.classList.add("invisibility");
+    element16.classList.add("invisibility");
+    element17.classList.add("invisibility");
+    element18.classList.add("invisibility");
+    element27.classList.add("invisibility");
+    element28.classList.add("invisibility");
 
 }
 
+window.onload = () => {
 
+    parent = document.getElementById("grid-parent");
 
-function collapse() {
-    clearAll();
-    closeAll();
-    element1.classList.add("focus-category");
+    for (let i = 1; i <= 28; i++) {
+        let command = `element${i} = document.getElementById("${i}");`;
+        eval(command);
 
-    parent.innerHTML = "";
-    parent.innerHTML += item1;
-    parent.innerHTML += item2;
-    parent.innerHTML += item3;
-    parent.innerHTML += item4;
-    parent.innerHTML += item5;
-    parent.innerHTML += item6;
-    parent.innerHTML += item7;
-    parent.innerHTML += item8;
-    parent.innerHTML += item9;
-    parent.innerHTML += item10;
-    parent.innerHTML += item11;
-    parent.innerHTML += item12;
-    parent.innerHTML += item13;
-    parent.innerHTML += item14;
-    parent.innerHTML += item15;
-    parent.innerHTML += item16;
-    parent.innerHTML += item17;
-    parent.innerHTML += item18;
-    parent.innerHTML += item19;
-    parent.innerHTML += item20;
-    parent.innerHTML += item21;
-    parent.innerHTML += item22;
-}
+        if (i !== 1 && i !== 2 && i !== 5 && i !== 9 && i !== 13 && i !== 26) {
+            command = `
+                element${i}.addEventListener("click", () => {
+                    clearAll();
+                    element${i}.classList.add("focus-category");
+                    parent.innerHTML = "";
+                    parent.innerHTML += item${i};
+                });`;
+        } else {
+            command = `
+                element${i}.addEventListener("click", () => {
+                    clearAll();
+                    element${i}.classList.add("focus-category");
+                });`;
+        }
 
+        eval(command);
+    }
 
-function drotfonat() {
-    clearAll();
-    closeAll();
-    element2.classList.add("focus-category");
+    element1.addEventListener("click", () => {
+        closeAll();
+        parent.innerHTML = "";
+        parent.innerHTML += item3;
+        parent.innerHTML += item4;
+        parent.innerHTML += item6;
+        parent.innerHTML += item7;
+        parent.innerHTML += item8;
+        parent.innerHTML += item10;
+        parent.innerHTML += item11;
+        parent.innerHTML += item12;
+        parent.innerHTML += item14;
+        parent.innerHTML += item15;
+        parent.innerHTML += item16;
+        parent.innerHTML += item17;
+        parent.innerHTML += item18;
+        parent.innerHTML += item19;
+        parent.innerHTML += item20;
+        parent.innerHTML += item21;
+        parent.innerHTML += item22;
+        parent.innerHTML += item23;
+        parent.innerHTML += item24;
+        parent.innerHTML += item25;
+        parent.innerHTML += item27;
+        parent.innerHTML += item28;
+    });
 
-    element3.classList.remove("visibility");
-    element4.classList.remove("visibility");
+    element2.addEventListener("click", () => {
+        closeAll();
+        element3.classList.remove("invisibility");
+        element4.classList.remove("invisibility");
 
-    parent.innerHTML = "";
-    parent.innerHTML += item1;
-    parent.innerHTML += item2;
+        parent.innerHTML = "";
+        parent.innerHTML += item3;
+        parent.innerHTML += item4;
+    });
 
-}
+    element5.addEventListener("click", () => {
+        closeAll();
+        element6.classList.remove("invisibility");
+        element7.classList.remove("invisibility");
+        element8.classList.remove("invisibility");
 
+        parent.innerHTML = "";
+        parent.innerHTML += item6;
+        parent.innerHTML += item7;
+        parent.innerHTML += item8;
+    });
 
+    element9.addEventListener("click", () => {
+        closeAll();
+        element10.classList.remove("invisibility");
+        element11.classList.remove("invisibility");
+        element12.classList.remove("invisibility");
 
-function csirkehalo() {
-    clearAll();
-    closeAll();
-    element5.classList.add("focus-category");
+        parent.innerHTML = "";
+        parent.innerHTML += item10;
+        parent.innerHTML += item11;
+        parent.innerHTML += item12;
+    });
 
-    element6.classList.remove("visibility");
-    element7.classList.remove("visibility");
-    element8.classList.remove("visibility");
+    element13.addEventListener("click", () => {
+        closeAll();
+        element14.classList.remove("invisibility");
+        element15.classList.remove("invisibility");
+        element16.classList.remove("invisibility");
+        element17.classList.remove("invisibility");
+        element18.classList.remove("invisibility");
 
-    parent.innerHTML = "";
-    parent.innerHTML += item3;
-    parent.innerHTML += item4;
-    parent.innerHTML += item5;
-}
+        parent.innerHTML = "";
+        parent.innerHTML += item14;
+        parent.innerHTML += item15;
+        parent.innerHTML += item16;
+        parent.innerHTML += item17;
+        parent.innerHTML += item18;
+    });
 
+    element26.addEventListener("click", () => {
+        closeAll();
+        element27.classList.remove("invisibility");
+        element28.classList.remove("invisibility");
 
-
-function szegek() {
-    clearAll();
-    closeAll();
-    element9.classList.add("focus-category");
-
-    element10.classList.remove("visibility");
-    element11.classList.remove("visibility");
-    element12.classList.remove("visibility");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item6;
-    parent.innerHTML += item7;
-    parent.innerHTML += item8;
-}
-
-
-
-function huzalok() {
-    clearAll();
-    closeAll();
-    element13.classList.add("focus-category");
-
-    element14.classList.remove("visibility");
-    element15.classList.remove("visibility");
-    element16.classList.remove("visibility");
-    element17.classList.remove("visibility");
-    element18.classList.remove("visibility");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item9;
-    parent.innerHTML += item10;
-    parent.innerHTML += item11;
-    parent.innerHTML += item12;
-    parent.innerHTML += item13;
-}
-
-function pontker() {
-    clearAll();
-    closeAll();
-    element19.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item14;
-}
-
-function ponthal() {
-    clearAll();
-    closeAll();
-    element20.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item15;
-}
-
-function huzalfesz() {
-    clearAll();
-    closeAll();
-    element21.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item16;
-}
-
-function szoges() {
-    clearAll();
-    closeAll();
-    element22.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item17;
-}
-
-function ipari() {
-    clearAll();
-    closeAll();
-    element23.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item18;
-}
-
-function tablas() {
-    clearAll();
-    closeAll();
-    element24.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item19;
-}
-
-function oszlop() {
-    clearAll();
-    closeAll();
-    element25.classList.add("focus-category");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item20;
-}
-
-
-function rogzetok() {
-    clearAll();
-    closeAll();
-    element26.classList.add("focus-category");
-
-    element27.classList.remove("visibility");
-    element28.classList.remove("visibility");
-
-    parent.innerHTML = "";
-    parent.innerHTML += item21;
-    parent.innerHTML += item22;
-}
+        parent.innerHTML = "";
+        parent.innerHTML += item27;
+        parent.innerHTML += item28;
+    });
+};
