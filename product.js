@@ -124,7 +124,7 @@ function clearAll() {
     }
 }
 
-function closeAll() {
+async function closeAll() {
 
     element3.classList.add("invisibility");
     element4.classList.add("invisibility");

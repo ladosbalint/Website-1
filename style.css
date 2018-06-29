@@ -156,7 +156,7 @@ i {
 .down {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
   animation: show 1.5s 0.5s ease-in alternate infinite; }
 
@@ -176,7 +176,7 @@ i {
   transform-style: preserve-3d;
   -webkit-transform: perspective(800px);
   -moz-transform: perspective(800px);
-  -ms-transform: perspective(800px);
+  -o-transform: perspective(800px);
   transform: perspective(800px); }
   .about h1, .about p {
     transition: all 0.8s ease; }
@@ -203,13 +203,13 @@ i {
   opacity: 0;
   -webkit-transform: translate3d(0, 0, 400px) rotateY(-40deg);
   -moz-transform: translate3d(0, 0, 400px) rotateY(-40deg);
-  -ms-transform: translate3d(0, 0, 400px) rotateY(-40deg);
+  -o-transform: translate3d(0, 0, 400px) rotateY(-40deg);
   transform: translate3d(0, 0, 400px) rotateY(-40deg); }
 .hideBox p {
   opacity: 0;
   -webkit-transform: translate3d(0, 0, 400px) rotateY(40deg);
   -moz-transform: translate3d(0, 0, 400px) rotateY(40deg);
-  -ms-transform: translate3d(0, 0, 400px) rotateY(40deg);
+  -o-transform: translate3d(0, 0, 400px) rotateY(40deg);
   transform: translate3d(0, 0, 400px) rotateY(40deg); }
 
 #two {
@@ -277,7 +277,7 @@ form {
   height: auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px; }
 
 #about-h1 {
@@ -302,7 +302,7 @@ form {
     #gallery #gallery-block .gallery-label {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
       border-radius: 5px;
       height: 5.9vw;
       display: block;
@@ -346,11 +346,20 @@ form {
     font-size: 1.625em;
     color: #454851;
     display: block;
-    border-top: 1px solid grey; }
+    visibility: visible;
+    opacity: 1;
+    border-top: 1px solid grey;
+    -webkit-transition: visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
+    -moz-transition: visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
+    -o-transition: visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
+    transition: background-color 0s linear, visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear; }
     .sidenav a:hover {
       color: #000 !important; }
   .sidenav .invisibility {
-    display: none; }
+    height: 0px;
+    padding: 0px;
+    visibility: hidden;
+    opacity: 0; }
   .sidenav .subcategory {
     font-size: 1.125em;
     border: none;
@@ -377,7 +386,7 @@ form {
     border: 2px dotted black;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     border-radius: 10px; }
     .grid-container .grid-item .grid-image {
       display: block;
