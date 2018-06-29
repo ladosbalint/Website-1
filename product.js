@@ -89,7 +89,7 @@ let item22 = `<div class="grid-item">
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
 let item23 = `<div class="grid-item">
-    <div class="main-category">Ipari kerítés</div>
+    <div class="main-category">Vadháló</div>
     <div class="sub-category">-</div>
     <img class="grid-image" src="http://via.placeholder.com/350x200" />
 </div>`;
@@ -153,13 +153,24 @@ window.onload = () => {
         eval(command);
 
         if (i !== 1 && i !== 2 && i !== 5 && i !== 9 && i !== 13 && i !== 26) {
-            command = `
-                element${i}.addEventListener("click", () => {
-                    clearAll();
-                    element${i}.classList.add("focus-category");
-                    parent.innerHTML = "";
-                    parent.innerHTML += item${i};
-                });`;
+            if (i >= 19 && i <= 25) {
+                command = `
+                    element${i}.addEventListener("click", () => {
+                        clearAll();
+                        closeAll();
+                        element${i}.classList.add("focus-category");
+                        parent.innerHTML = "";
+                        parent.innerHTML += item${i};
+                    });`;
+            } else {
+                command = `
+                    element${i}.addEventListener("click", () => {
+                        clearAll();
+                        element${i}.classList.add("focus-category");
+                        parent.innerHTML = "";
+                        parent.innerHTML += item${i};
+                    });`;
+            }
         } else {
             command = `
                 element${i}.addEventListener("click", () => {
