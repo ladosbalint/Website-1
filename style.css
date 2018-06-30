@@ -328,9 +328,10 @@ form {
 
 /* The sidebar menu */
 .sidenav {
-  height: 94.5%;
+  height: 94.6%;
   margin-top: 50px;
   width: 18%;
+  min-width: 230px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -339,22 +340,29 @@ form {
   overflow-x: hidden;
   padding-top: 20px;
   overflow-y: auto;
+  background-color: #454851;
   /* The navigation menu links */ }
   .sidenav a {
+    margin-left: 0px;
+    font-family: 'Raleway', sans-serif;
     padding: 6px 8px 6px 25px;
     text-decoration: none;
     font-size: 1.625em;
-    color: #454851;
+    color: white;
     display: block;
     visibility: visible;
     opacity: 1;
-    border-top: 1px solid grey;
-    -webkit-transition: visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
-    -moz-transition: visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
-    -o-transition: visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
-    transition: background-color 0s linear, visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear; }
+    -webkit-transition: background-color 0s linear, visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
+    -moz-transition: background-color 0s linear, visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
+    -o-transition: background-color 0s linear, visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear;
+    transition: margin-left 0.5s, background-color 0s linear, visibility 0s, opacity 0.2s 0.1s, padding 1s 0.1s ease, height 1s linear; }
     .sidenav a:hover {
-      color: #000 !important; }
+      margin-left: 15px; }
+    .sidenav a:first-child {
+      border-bottom: 3px solid grey;
+      padding-top: 10px; }
+    .sidenav a:last-child {
+      margin-bottom: 60px; }
   .sidenav .invisibility {
     height: 0px;
     padding: 0px;
@@ -364,8 +372,13 @@ form {
     font-size: 1.125em;
     border: none;
     margin-left: 40px; }
+    .sidenav .subcategory:hover {
+      margin-left: 50px !important; }
   .sidenav .focus-category {
-    background-color: yellow; }
+    background-color: #da2c38;
+    color: white !important; }
+    .sidenav .focus-category:hover {
+      margin-left: 0px; }
 
 .grid-container {
   margin-top: 50px;
@@ -405,6 +418,12 @@ form {
       margin-top: 10px;
       margin-bottom: 30px; }
 
+@media (max-width: 1296px) {
+  .sidenav {
+    display: none; }
+
+  .grid-container {
+    width: 100%; } }
 /*#loading {
    width: 10vw;
    height: 10vw;
