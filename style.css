@@ -3,7 +3,8 @@ body {
   overflow-x: hidden;
   position: relative;
   padding-bottom: 150px;
-  min-height: 100%; }
+  min-height: 100%;
+  margin: 0; }
 
 div p, h1, label, section {
   font-family: 'Crimson Text', serif; }
@@ -90,11 +91,44 @@ h1 {
   text-align: center;
   font-size: 2.8125em; }
 
+svg {
+  display: block;
+  margin: auto;
+  pointer-events: none;
+  font-size: 8vw; }
+
+#name {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 0;
+  text-anchor: middle;
+  stroke: #fff;
+  stroke-width: 3;
+  fill: none;
+  font-family: "PT Serif", serif;
+  animation: move 10s; }
+
+@media (max-width: 1000px) {
+  #name {
+    stroke-width: 2; } }
+@keyframes move {
+  0% {
+    stroke-dashoffset: 1200; }
+  100% {
+    stroke-dashoffset: 0; } }
+#home-left {
+  width: 49%;
+  float: left;
+  height: 16vw; }
+
+#home-right {
+  width: 51%;
+  float: right;
+  height: 16vw; }
+
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("two.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-positon: center;
   background-attachment: fixed;
   color: #eef0f2;
   height: 42vw;
@@ -151,7 +185,7 @@ i {
   padding: 20px;
   position: absolute;
   top: 87%;
-  left: 50%; }
+  left: 48%; }
 
 .down {
   -webkit-transform: rotate(45deg);
