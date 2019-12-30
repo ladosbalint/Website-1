@@ -24,8 +24,6 @@ nav.navbar {
     font-size: 18px !important;
     margin: 0 .5px; }
   nav.navbar li a:hover {
-    border-bottom: 5px solid #222222;
-    margin-bottom: -5px;
     animation: activate .5s 1 ease-out forwards; }
   nav.navbar button {
     background-color: #FFFFFF !important; }
@@ -83,9 +81,7 @@ nav.navbar {
 
 .default {
   background-color: #585b63 !important;
-  color: #000000 !important;
-  border-bottom: 5px solid #222222;
-  margin-bottom: -5px; }
+  color: #000000 !important; }
 
 h1 {
   text-align: center;
