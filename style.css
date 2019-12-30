@@ -15,7 +15,8 @@ a, a:hover, a:active, a:visited {
 
 nav.navbar {
   background-color: #222222 !important;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 2px solid white; }
   nav.navbar a {
     color: #FFFFFF !important;
     padding-left: 17px !important;
@@ -24,7 +25,7 @@ nav.navbar {
     font-size: 18px !important;
     margin: 0 .5px; }
   nav.navbar li a:hover {
-    animation: activate .5s 1 ease-out forwards; }
+    animation: activate .3s 1 ease-out forwards; }
   nav.navbar button {
     background-color: #FFFFFF !important; }
     nav.navbar button span {
@@ -222,7 +223,7 @@ i {
     margin: 0 auto;
     margin-top: 40px;
     width: 30%;
-    padding-top: 10px;
+    padding-top: 11px;
     padding-bottom: 10px;
     cursor: pointer; }
     .about div:hover {
@@ -264,7 +265,9 @@ i {
   position: absolute;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  font-family: Verdana, sans-serif;
+  line-height: 1.5; }
   #footer #footer_contact {
     display: inline-block;
     font-size: 1.125em;
